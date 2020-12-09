@@ -36,13 +36,13 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item ">
-            <a class="nav-link" href="../pages/index.html">
+            <a class="nav-link" href="#introduction">
               <i class="material-icons">widgets</i>
               <p> Introduction </p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="../pages/index.html">
+            <a class="nav-link" href="#covid">
               <i class="material-icons">apps</i>
               <p> Dashboard
                 <!-- <b class="caret"></b> -->
@@ -51,25 +51,25 @@
             <div class="tab" id="pagesExamples">
                   <ul > <!-- WAS!! class="nav" -->
                     <li class="nav-item ">
-                      <a class="nav-link" href="../pages/covid19.html">
+                      <a class="nav-link" href="#covid">
                         <span class="sidebar-mini"></span>
                         <span class="sidebar-normal"> COVID-19 Cases</span>
                       </a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link" href="../pages/race.html">
+                      <a class="nav-link" href="#race">
                         <span class="sidebar-mini"></span>
                         <span class="sidebar-normal"> Race Data </span>
                       </a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link" href="../pages/socioeconomic.html">
+                      <a class="nav-link" href="#socio">
                         <span class="sidebar-mini"></span>
                         <span class="sidebar-normal"> Socioeconomic Status </span>
                       </a>
                     </li>
                     <li class="nav-item ">
-                      <a class="nav-link" href="../pages/political.html">
+                      <a class="nav-link" href="#vote">
                         <span class="sidebar-mini"></span>
                         <span class="sidebar-normal"> Political Influences </span>
                       </a>
@@ -78,13 +78,13 @@
               </div>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="../pages/data.html">
+            <a class="nav-link" href="#data">
               <i class="material-icons">content_paste</i>
               <p> Data source </p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="../pages/contact.html">
+            <a class="nav-link" href="#contacts">
               <i class="material-icons">timeline</i>
               <p> Contacts </p>
             </a>
@@ -98,6 +98,9 @@
 
 
 
+
+
+
     <!-- MAIN CONTENT (3 div's) -->
     <div class="main-panel">
       <div class="content">
@@ -105,11 +108,10 @@
 
 
 <!-- INTRODUCTION (scroll to here) -->
-<div class="header text-center">
-  <h2 class="title">Project Introduction</h2>
-</div>
-
-
+<section id="introduction">
+  <div class="header text-center">
+    <h2 class="title">Project Introduction</h2>
+  </div>
 <!-- INTRODUCTION Content -->
 <div class="row">
   <div class="col-md-12">
@@ -169,16 +171,244 @@
     </ul>
   </div>
 </div>
+</section>
 <!-- INTRODUCTION Content -->
-
-
-
 
 <br/>
 
+
+
+
+<!-- COVID CONTENT -->
+<section id="covid">
+<div class="header text-center">
+  <h2 class="title">Covid Cases and Deaths in US county</h2>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header ">
+        <h3 class="card-title">COVID-19 Dashboard -
+          <small class="description">Cases and Deaths in US county</small>
+        </h3>
+      </div>
+      <div class="card-body ">
+        <ul class="nav nav-pills nav-pills-warning" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+              DESCRIPTION
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content tab-space">
+          <div class="tab-pane active" id="link1">
+            The impact of COVID-19 has been felt across the United States at different times. This visualization shows the county level data on how the United States has been affected, looking into cases and deaths per 100,000 people. By adjusting the time aspect of this visualization one can see where COVID-19 landed first and which counties and regions it has spread to since. Click on the bubble chart to focus on a specific state, or select counties on the map by dragging a box around them.
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Dashboard 1 -->
+  <div class='tableauPlaceholder' id='viz1607465719780' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_covid_cumulative&#47;Cumulative&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='w209_covid_cumulative&#47;Cumulative' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_covid_cumulative&#47;Cumulative&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                
+
+
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1607465719780');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='980px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='980px';} else { vizElement.style.width='100%';vizElement.style.height='980px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+  <br>
+  <br>
+ <!-- Dashboard 2 -->
+  <div class='tableauPlaceholder' id='viz1607465767973' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_covid_new&#47;New&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='w209_covid_new&#47;New' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_covid_new&#47;New&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object>
+  </div>                
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1607465767973');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.minWidth='1000px';vizElement.style.maxWidth='100%';vizElement.style.minHeight='850px';vizElement.style.maxHeight=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.minHeight='1200px';vizElement.style.maxHeight=(divElement.offsetWidth*1.77)+'px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+</section>
+<!-- COVID CONTENT -->
+
+<br/>
+<br/>
+
+<!-- RACE CONTENT -->
+<section id="race">
+<div class="header text-center">
+  <h2 class="title">Race and COVID-19 relationship</h2>
+</div>
+
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header ">
+        <h3 class="card-title">Racial Dashboard -
+          <small class="description">Race and COVID-19 relationship</small>
+        </h3>
+      </div>
+      <div class="card-body ">
+        <ul class="nav nav-pills nav-pills-warning" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#link1" role="tablist">
+              DESCRIPTION
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#link5" role="tablist">
+              INSIGHT
+            </a>
+          </li>
+        </ul>
+        <div class="tab-content tab-space">
+          <div class="tab-pane active" id="link1">
+            The focus of this project was to uncover relationships between racial and social factors and the impact of COVID-19. For this segment, we’ve looked at relationships between a county’s nonwhite population and its occurrence of COVID-19 cases and deaths. We found that this relationship has varied throughout the pandemic - early indications suggest that counties with high nonwhite populations were more adversely affected, but this trend has reversed as the pandemic has raged on, making the narrative less clear. These visualizations allow the user to observe this relationship over time to reach their own conclusions.
+          </div>
+          <div class="tab-pane" id="link5">
+            The next section focuses on the disparate impact COVID-19 has had on white and nonwhite populations in the United States. The data shows that throughout the course of the pandemic nonwhite Americans have been more likely to contract and die from COVID-19 than white Americans. This is true at the state level, where the vast majority of states report higher proportions of cases and deaths by nonwhites than would be predicted by their population sizes, and it is true at the county level where counties with higher nonwhite populations are likely to have greater numbers of cases and deaths than otherwise similar counties with lower nonwhite populations. This trend was particularly strong in the early days of the pandemic but has reversed in the last several months. In fact, in November counties with higher white populations were hit hardest by COVID-19, both with regards to contagion and lethality. All of these factors are part of the complex story of how COVID-19 has progressed and what populations have been impacted.
+            <br><br>
+            The analysis presented in this section <strong>should not</strong> be interpreted as a declaration of causality. There are many explanations for why nonwhite populations have borne the disproportional brunt of this virus, including geographic reasons, population density, and socioeconomic factors. This analysis is merely acknowledging the existence of this disparity and informing viewers of how COVID-19 has progressed in the United States.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Dashboard 1 -->
+      <div class='tableauPlaceholder' id='viz1607354082716' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_racial_cumulative&#47;Cumulative&#47;1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='site_root' value='' />
+          <param name='name' value='w209_racial_cumulative&#47;Cumulative' />
+          <param name='tabs' value='no' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_racial_cumulative&#47;Cumulative&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+<script type='text/javascript'>                    var divElement = document.getElementById('viz1607354082716');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<br/>
+<br/>
+
+      <!-- Dashboard 2 -->
+      <div class='tableauPlaceholder' id='viz1607354245166' style='position: relative'>
+        <noscript><a href='#'>
+          <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_racial_new&#47;New-NonWhitePopulation&#47;1_rss.png' style='border: none' />
+        </a>
+      </noscript>
+      <object class='tableauViz'  style='display:none;'>
+        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+        <param name='embed_code_version' value='3' />
+        <param name='site_root' value='' />
+        <param name='name' value='w209_racial_new&#47;New-NonWhitePopulation' />
+        <param name='tabs' value='no' />
+        <param name='toolbar' value='yes' />
+        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_racial_new&#47;New-NonWhitePopulation&#47;1.png' />
+        <param name='animate_transition' value='yes' />
+        <param name='display_static_image' value='yes' />
+        <param name='display_spinner' value='yes' />
+        <param name='display_overlay' value='yes' />
+        <param name='display_count' value='yes' />
+        <param name='language' value='en' />
+        <param name='filter' value='publish=yes' />
+      </object>
+    </div>
+
+<script type='text/javascript'>                    var divElement = document.getElementById('viz1607354245166');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<br/>
+<br/>
+      <!-- Dashboard 3 -->
+      <div class='tableauPlaceholder' id='viz1607354955001' style='position: relative'>
+        <noscript>
+          <a href='#'>
+            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_racial_disproportionate&#47;DisproportionateImpactDash&#47;1_rss.png' style='border: none' />
+          </a>
+        </noscript>
+        <object class='tableauViz'  style='display:none;'>
+          <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+          <param name='embed_code_version' value='3' />
+          <param name='path' value='views&#47;w209_racial_disproportionate&#47;DisproportionateImpactDash?:language=zh-Hant&amp;:embed=y&amp;:display_count=y&amp;publish=yes' />
+          <param name='toolbar' value='yes' />
+          <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;w2&#47;w209_racial_disproportionate&#47;DisproportionateImpactDash&#47;1.png' />
+          <param name='animate_transition' value='yes' />
+          <param name='display_static_image' value='yes' />
+          <param name='display_spinner' value='yes' />
+          <param name='display_overlay' value='yes' />
+          <param name='display_count' value='yes' />
+          <param name='language' value='en' />
+          <param name='filter' value='publish=yes' />
+        </object>
+      </div>
+
+<script type='text/javascript'>                    var divElement = document.getElementById('viz1607354955001');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+</script>
+</section>
+<!-- RACE CONTENT -->
+
+<br/>
+<br/>
+<!-- SOCIO CONTENT -->
+<section id="socio">
+<div class="header text-center">
+<h2 class="title">Socioeconomic status and COVID-19 relationship</h2>
+</div>
+
+
+  <!-- Dashboard 1 -->
+  <div class='tableauPlaceholder' id='viz1607465221004' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;coivd_socioeconomic_factors_map_automatic&#47;NationalDistributionofSocioeconomicMetricsDB&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='coivd_socioeconomic_factors_map_automatic&#47;NationalDistributionofSocioeconomicMetricsDB' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;coivd_socioeconomic_factors_map_automatic&#47;NationalDistributionofSocioeconomicMetricsDB&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                
+
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1607465221004');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+  <br><br>
+
+
+  <!-- Dashboard 2 -->
+  <div class='tableauPlaceholder' id='viz1607465324641' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;coivd_socioeconomic_factors_automatic&#47;SocioeconomicFactorsonCovid-19&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='coivd_socioeconomic_factors_automatic&#47;SocioeconomicFactorsonCovid-19' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;co&#47;coivd_socioeconomic_factors_automatic&#47;SocioeconomicFactorsonCovid-19&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /></object></div>                
+
+  <script type='text/javascript'>                    var divElement = document.getElementById('viz1607465324641');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1060px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1060px';} else { vizElement.style.width='100%';vizElement.style.height='1060px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+</script>
+</section>
+<!-- SOCIO CONTENT -->
+
+<br/>
+<br/>
+<!-- VOTE CONTENT -->
+<section id="vote"
+<div class="header text-center">
+  <h2 class="title">Political Influences</h2>
+</div>
+
+
+  <div class='tableauPlaceholder' id='viz1607464436867' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final_PoliticsAndCovid_v2&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:center;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Final_PoliticsAndCovid_v2&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final_PoliticsAndCovid_v2&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1607464436867');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+</script>
+</section>
+<!-- VOTE CONTENT -->
+
+
+<br/>
+<br/>
 <!-- DATA CONTENT -->
 <div class="header text-center">
+<section id="data">
   <h2 class="title">Data Sources</h2>
+</section>
 </div>
 <div class="row">
             <div class="col-md-12">
@@ -229,7 +459,9 @@
 
 <!-- CONTACT CONTENT -->
 <div class="header text-center">
+<section id="contacts">
   <h2 class="title">Team Contacts</h2>
+</section>
 </div>
 <div class="row">
           <div class="col-lg-6 cards">
@@ -291,6 +523,21 @@
 
 <!-- WRAPPER-->
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -550,6 +797,32 @@
         });
       });
     });
+
+
+  /*-- HIGHLIGHT NAVBARS --*/
+  window.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+              console.log("addEventListener: "+id + ":: " + document.querySelector(`ul li a[href="#${id}"]`));
+              document.querySelector(`ul li a[href="#${id}"]`).parentElement.classList.add('active');
+            } else {
+              document.querySelector(`ul li a[href="#${id}"]`).parentElement.classList.remove('active');
+            }
+          });
+        });
+
+        // Track all sections that have an `id` applied
+        document.querySelectorAll('section[id]').forEach((section) => {
+          observer.observe(section);
+        });
+        
+      });
+      /*-- HIGHLIGHT NAVBARS --*/
+
+
+
   </script>
   <script>
     $(document).ready(function() {
